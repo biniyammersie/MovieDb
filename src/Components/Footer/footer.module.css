@@ -1,0 +1,130 @@
+/* Main footer background */
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #141414;
+    color: #808080;
+    padding: 64px 24px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the content like the reference image */
+.container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Social media icons */
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+}
+
+.socialIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 21px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.socialIcon:hover {
+    color: #b3b3b3;
+}
+
+/* Four footer columns */
+.footerNav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Remove default list styling */
+.footerColumn {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerColumn li {
+    margin-bottom: 16px;
+}
+
+.footerColumn a {
+    color: #808080;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.footerColumn a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright text */
+.copyright {
+    margin: 12px 0 0;
+    color: #808080;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .footer {
+        padding: 48px 24px 20px;
+    }
+
+    .footerNav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 32px;
+        row-gap: 8px;
+    }
+
+    .footerColumn li {
+        margin-bottom: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .footer {
+        padding: 36px 20px 20px;
+    }
+
+    .socialLinks {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .socialIcon {
+        font-size: 20px;
+    }
+
+    .footerNav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 18px;
+        row-gap: 6px;
+    }
+
+    .footerColumn li {
+        margin-bottom: 14px;
+    }
+
+    .footerColumn a {
+        font-size: 12px;
+    }
+
+    .copyright {
+        margin-top: 12px;
+        font-size: 10px;
+    }
+}
