@@ -4,7 +4,6 @@ import {Play, Info} from "lucide-react";
 import { useEffect, useState } from "react";
 import{Movieinstance } from "../../Utility/Movieinstance.js"
 const BANNER_BASE= "https://image.tmdb.org/t/p/original/"
-import request from '../../Utility/request.js'
 import requests from "../../Utility/request.js";
 function Banner() {
 const [bannerImage, setbannerImage] = useState({});
