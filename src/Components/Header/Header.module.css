@@ -5,9 +5,10 @@
     width: 100%;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 1000;
     backdrop-filter: blur(3px);
-    transition: background-color 0.4s ease;
+    transition: background-color 0.9s ease;
 }
 .scrolled{
 background-color:rgba(0, 0, 0, 0.9);
@@ -43,7 +44,7 @@ background-color:rgba(0, 0, 0, 0.9);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
     white-space: nowrap;
 }
 .navLink:hover{
